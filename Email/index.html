@@ -1,12 +1,392 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            max-width: 600px !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+        }
+
+        [style*="Arial"] {
+            font-family: 'Arial', arial, sans-serif !important;
+        }
+        sup{
+            font-size: 12px;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+           /* -ms-interpolation-mode: bicubic;*/
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        .one{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .one__title{
+            padding-top: 24px;
+          padding-left: 20px;
+          	padding-right: 20px;
+        }
+        .one__title b{
+            font-family: Arial;
+            font-size: 40px;
+            line-height: 42px;
+            color: #231E1D;
+        }
+        .one__text{
+            padding-top: 16px;
+           padding-left: 20px;
+          	padding-right: 20px;
+        }
+        .one__text p{
+            font-family: Arial;
+            font-size: 22px;
+            line-height: 26px;
+            color: #0098D7;
+        }
+        .one__name{
+            padding-top: 16px;
+            padding-left: 22px;
+          	padding-right: 20px;
+        }
+        .one__name p{
+            font-family: Arial;
+            font-size: 14px;
+            line-height: 22px;
+            color: #4C4948;
+        }
+        .two__title p{
+            font-family: Arial;
+            font-size: 34px;
+            line-height: 38px;
+            color: #FFFFFF;
+        }
+        .list__li p{
+            font-family: Arial;
+            font-size: 18px;
+            line-height: 26px;
+            color: #FFFFFF;
+        }
+        .two{
+            padding-top: 24px;
+           
+        }
+      .two img{
+      	width:32px;
+      }
+        
+        .two__title{
+            padding-top: 24px;
+            padding-left: 20px;
+        }
+        .two__title p{
+            font-family: Arial;
+            font-size: 34px;
+            line-height: 38px;
+            color: #FFFFFF;
+        }
+        .list__li{
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+        .list__li p{            
+            font-family: Arial;
+            font-size: 18px;
+            line-height: 26px;
+            color: #FFFFFF;
+        }
+      	.three{
+
+        }
+        .three__title{
+            padding-left: 20px;
+            padding-top: 24px;
+        }
+        .three__title p{
+            font-family: Arial;
+            font-size: 34px;
+            line-height: 38px;
+            color: #0098D7;
+        }
+        .three__txt {
+           padding-left:16px;
+            padding-top: 16px;
+            padding-right:20px;
+        }
+        .three__txt p{
+           
+            font-family: Arial;
+            font-size: 18px;
+            line-height: 26px;
+            color: #4C4948;
+
+        }
+        .three__img{
+          padding-top:16px;
+           padding-left:20px;
+            width: 8px;
+        }
+      .four{}
+        .four__title{
+            padding-left:20px;
+            padding-right:20px;
+            padding-top:24px;
+            text-align: center;
+        }
+        .four__title b{
+            font-family: Arial;
+            font-size: 40px;
+            line-height: 42px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .four__link{
+            padding-bottom: 32px;
+            padding-top: 24px;
+            
+            /* background: #D03E7D; */
+        }
+        .four__link b{
+       
+            font-family: Arial;
+            font-size: 22px;
+            line-height: 60px;
+            color: #FFFFFF;
+        }
+      .footer{
+
+        }
+        .footer__title{
+            padding-top: 24px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .footer__title_t{
+            padding-top: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .footer__title_t{
+            font-family: Arial;
+            font-size: 14px;
+            line-height: 22px;
+            color: #8E8E8E;
+        }
+
+        .footer__title b{
+            font-family: Arial;
+            font-size: 14px;
+            line-height: 22px;
+            color: #8E8E8E;
+        }
+
+        .footer__txt{
+          
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .footer__txt p{
+            font-family: Arial;
+            font-size: 14px;
+            line-height: 22px;
+            color: #8E8E8E; 
+        }
+        .footer__img{
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+       @media (max-width:410px) {
+         	.one__title{
+         	width:300px !important;	
+         }
+         
+            .one__title b{
+                font-size: 32px !important;
+                line-height: 33px !important;
+            }
+            .four__title b{
+                font-size: 32px !important;
+            }
+            .four__link div{
+                width: 240px !important;
+                height: 56px !important;
+            }
+            .four__link b{
+                font-size: 18px;
+                line-height: 55px;
+                
+            }
+        }
+    </style>
 </head>
-<body>
-    
+
+<body style="margin: 0; padding: 0;">
+    <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое
+        письмо</div>
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+        <table class="one" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+            <tr>
+                <td class="one__title"><b>Применение высокодозных препаратов колекальциферола
+                    для лечения дефицита витамина D</b></td>
+            </tr>
+        </table>
+        <table class="one" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+            <tr>
+                <td class="one__text">
+                    <p>результаты открытого
+                        многоцентрового сравнительного рандомизированного
+                        исследования<sup>1</sup></p>
+                </td>
+            </tr>
+        </table>
+        <table class="one" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+            <tr>
+                <td style="width:70px;padding-left: 20px">
+                    <img src="Frame 1.png"  alt="Авторы" />
+                </td>
+                <td class="one__name"><p>Рожинская Л.Я., Пигарова Е.А., Багрецова А.А., Вербовой А.Ф., Кондратьева Н.Г., Василевская О.А.,
+                    Василюк В.Б., Манько М.В., Шуньков В.Б., Гребенникова Т.А.</p></td>
+            </tr>
+        </table>
+        <table class="two" cellpadding="0" cellspacing="0" width="100%" bgcolor="#0098D7">
+            <tr>
+                <td class="two__title"><p>Актуализация</p></td>
+            </tr>
+            <tr>
+                <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#0098D7">
+                    <tr>
+                        <td width="32px" style="padding-left: 20px">
+                            <img width="32" src="question_icon.png" alt="question_icon.png" /> 
+                        </td>
+                        <td class="list__li">
+                          <p>Безопасно ли лечение дефицита витамина D колекальциферолом в высоких дозах?</p>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td width="32px" style="padding-left: 20px">
+                            <img src="question_icon.png" alt="question_icon.png" />
+                        </td>
+                        <td class="list__li"><p >Как ускорить достижение целевых значений уровня 25(ОН)D в сыворотке крови?</p></td>
+                    </tr>
+                    <tr>
+                        <td width="32px" style="padding-left: 20px">
+                            <img  src="question_icon.png" alt="question_icon.png" />
+                        </td>
+                        <td class="list__li"><p>Как добиться высокой приверженности лечению пациентов, жалующихся на длительность курса и большое количество капсул/капель ежедневно?</p></td>
+                    </tr>
+                </table>
+            </tr>
+        </table>
+      <table class="three" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+            <tr>
+                <td class="three__title"><p>Безопасность</p></td>
+            </tr>
+            <tr>
+            <tr>
+                <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed" align="center">
+            <tr>
+                <td class="three__img"><img src="bullet_icon.png" alt="."></td>
+                <td class="three__txt"><p>Не выявлено значимых изменений ПТГ, креатинина, кальция в крови и моче, фосфатов</p></td>
+            </tr>
+            <tr>
+                <td><img  class="three__img" src="bullet_icon.png" alt="."></td>
+                <td class="three__txt"><p>Случаев гиперкальциемии и гиперкальциурии</p></td>
+            </tr>
+            <tr>
+                <td><img  class="three__img" src="bullet_icon.png" alt="."></td>
+                <td class="three__txt"><p>Отрицательной динамики по результатам оценки витальных функций, общего и биохимического анализов крови, общего анализа мочи. Выявленные отклонения от нормальных значений лабораторных показателей были расценены врачами-исследователями как клинически незначимые</p></td>
+            </tr>
+            <tr>
+                <td ><img  class="three__img" src="bullet_icon.png" alt="."></td>
+                <td class="three__txt" ><p>Различий в количестве нежелательных явлений, их степени, связи с приемом препаратов между группами лечения и группой сравнения1</p></td>
+                </tr>
+            </table>
+          </tr>
+        </table>
+       <table class="four" cellpadding="0" cellspacing="0" width="100%" bgcolor="#0098D7">
+            <tr>
+                <td class="four__title">
+                    <b>Более подробно изучить исследование и его результаты вы можете в статье</b>
+                </td>
+            </tr>
+        
+            <tr >
+             
+                <td class="four__link" align="center">
+                    <div style="width: 276px; height:66px; background: #D03E7D; text-align: center;">
+                        <a href="#" style="text-decoration: none"><b>СКАЧАТЬ СТАТЬЮ</b></a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+      <table class="footer" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+            <tr>
+                <td class="footer__title">
+                    <b>Список сокращений</b>
+                </td>
+            </tr>
+            <tr>
+                <td class="footer__txt">
+                    <p>МЕ — международная единица <br> ПТГ — паратиреоидный гормон</p>
+                </td>
+            </tr>
+        </table>
+        <table class="footer" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+            <tr>
+                <td class="footer__title_t">
+                    <b>Список используемой литературы</b>
+                </td>
+            </tr>
+            <tr>
+                <td class="footer__txt">
+                    <p>1. Рожинская Л.Я. Применение высокодозных препаратов колекальциферола для лечения дефицита витамина D: результаты открытого многоцентрового сравнительного рандомизированного исследования [Электронный ресурс] — Режим доступа https://drive.google.com/file/d/1-NXy773AOqe7FhCbEeVAq-sNVjWbJdbu/view?usp=sharing свободный — (25.04.2021). </p>
+                </td>
+            </tr>
+        </table>
+        <table class="footer" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+            <tr>
+                <td class="footer__img" align="center">
+                    <img src="logo_akrihin.png" alt="Акрихин">
+                </td>
+            </tr>
+        </table>
+        <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+            <tr>
+                <td class="footer__txt" style="padding-bottom: 0px;"><p>АО «АКРИХИН», 142450, Московская область, Ногинский район, <br> Старая Купавна, ул. Кирова, 29. Телефон/факс: +7 (495) 702-95-03</p></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 20px; padding-right: 20px;"><p style="font-family: Arial;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #8E8E8E;">ИНФОРМАЦИЯ ДЛЯ МЕДИЦИНСКИХ И ФАРМАЦЕВТИЧЕСКИХ РАБОТНИКОВ</p></td>
+            </tr>
+        </table>
+    </table>
 </body>
 </html>
