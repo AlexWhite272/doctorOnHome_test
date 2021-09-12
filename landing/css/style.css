@@ -1039,7 +1039,7 @@ sup {
 }
 @media screen and (max-width: 460px) {
   .dangerous {
-    margin-left: 20px;
+    margin-left: 20px !important;
   }
   .dangerous .dangerous__p2 {
     margin-left: 20px;
