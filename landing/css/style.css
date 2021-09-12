@@ -210,7 +210,6 @@ sup {
 }
 
 .dangerous {
-  margin: 0px auto;
   max-width: 1920px;
   padding-top: 120px;
   margin: 0px auto;
@@ -725,7 +724,7 @@ sup {
   }
   .dangerous .dangerous__p2 {
     max-width: 1000px;
-    margin-left: 600px;
+    margin-left: 350px;
   }
   .dangerous .dangerous__p2 h3 {
     padding-top: 80px;
@@ -963,6 +962,9 @@ sup {
     color: #1F2937;
   }
 
+  .dangerous {
+    padding-left: 35px;
+  }
   .dangerous .dangerous__p1 .dangerous__instr {
     width: 350px;
   }
@@ -983,7 +985,6 @@ sup {
     line-height: 20px;
     padding-top: 10px;
   }
-
   .pills img {
     width: 300px;
   }
@@ -1034,12 +1035,12 @@ sup {
   .structure__block p {
     font-size: 14px;
     padding-right: 15px;
-    line-height: 18px;
+    line-height: 15px;
   }
 }
 @media screen and (max-width: 460px) {
   .dangerous {
-    margin-left: 20px;
+    padding-left: 20px;
   }
   .dangerous .dangerous__p2 {
     margin-left: 20px;
@@ -1050,8 +1051,8 @@ sup {
 
   .structure__block p {
     font-size: 12px;
-    padding-right: 15px;
-    line-height: 18px;
+    padding-right: 10px;
+    line-height: 15px;
   }
 
   .structure__container .structure__img {

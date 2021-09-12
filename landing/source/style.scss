@@ -156,7 +156,7 @@ sup{
 }
 
 .dangerous {
-    margin: 0px auto; 
+    // margin: 0px auto; 
     max-width: 1920px;
     // height: 400px;
     padding-top: 120px;
@@ -523,7 +523,7 @@ sup{
         
         .dangerous__p2{
             max-width: 1000px;
-            margin-left: 600px;
+            margin-left: 350px;
             
             & h3{
                 padding-top: 80px;
@@ -631,6 +631,21 @@ sup{
         padding-left: 20px;
         padding-right: 20px;
     } 
+    // .dangerous{
+    //     padding-left: 50px;
+    //     .dangerous{
+
+    //         .dangerous__p2{
+            
+                
+    //             & h3{
+    //                 font-size: 18px;
+    //                 line-height: 20px;
+    //                 padding-top: 10px;
+    //             }
+    //         }
+    //     }
+    // }
 }
 @media screen and (max-width:768px) {
     .ques__text{
@@ -715,6 +730,7 @@ sup{
     
     }
     .dangerous{
+        padding-left: 35px;
         .dangerous__p1{
             .dangerous__instr{
                 width: 350px;
@@ -736,6 +752,9 @@ sup{
                 font-size: 18px;
                 line-height: 20px;
                 padding-top: 10px;
+            }
+            &p{
+
             }
         }
     }
@@ -791,7 +810,7 @@ sup{
         & p{
             font-size: 14px;
             padding-right: 15px;
-            line-height: 18px ;
+            line-height: 15px ;
         }
     }
     
@@ -800,7 +819,7 @@ sup{
 
 @media screen and (max-width:460px) {
     .dangerous{
-        margin-left: 20px;
+        padding-left: 20px;
         .dangerous__p2{
            margin-left: 20px; 
            & h3{
@@ -815,8 +834,8 @@ sup{
         
         & p{
             font-size: 12px;
-            padding-right: 15px;
-            line-height: 18px ;
+            padding-right: 10px;
+            line-height: 15px ;
         }
     }
     .structure__container{
